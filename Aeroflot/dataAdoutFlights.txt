@@ -1,0 +1,15 @@
+Airplanes
+From Dnipro to Suceva
+1
+Airplanes
+From Dnipro to Warsaw
+2
+Airplanes
+From Dnipro to Istanbul
+3
+Helicopters
+From Zaporizhia to Dnipro
+4
+Airships
+From Kryvyi to Kyiv
+5
