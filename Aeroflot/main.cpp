@@ -1,8 +1,12 @@
+﻿/*
+	Описати структуру Предмет (назва, викладач, семестр). Ввести дані про 5 предметів. 
+	Вивести прізвища викладачів, які ведуть заняття у певному семестрі.
+*/
+
 #include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
-
 #include "Aeroflot.h"
 
 using namespace std;
@@ -28,9 +32,15 @@ int main() {
 	}
 	catch (const ifstream::failure & ex)
 	{
-		cout << ex.what() << endl;
+		cout << "Error: " << ex.what() << endl;
+		cout << "Code " << ex.code() << endl;
+		return 0;
 	}
-	
+	catch (...) 
+	{
+		cout << "file error" << endl;
+	}
+
 	while (!fin.eof())
 	{
 		Aeroflot aeroflot;
@@ -39,7 +49,6 @@ int main() {
 		getline(fin, aeroflot.flightNumber);
 		aeroflots.push_back(aeroflot);
 	}
-	
 	for (auto aeroflot : aeroflots) {
 		if (aeroflot.typeOfAircraft != typeOfAircraft) continue;
 		cout << "Type of Aircraft: " << aeroflot.typeOfAircraft << '\n';
@@ -48,5 +57,7 @@ int main() {
 	}
 
 	fin.close();
+
+	system("PAUSE");
 	return 0;
 }

@@ -1,3 +1,8 @@
+﻿/*
+	Написати програму, яка зчитує текст із файлу та 
+	виводить на екран лише рядки, що містять двозначні числа
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -5,7 +10,7 @@
 using namespace std;
 
 int main() {
-	string filePath = "test.txt";
+	string filePath = "numders.txt";
 	string numder;
 
 	ifstream fin;
@@ -17,18 +22,28 @@ int main() {
 	}
 	catch (const ifstream::failure& ex)
 	{
-		cout << ex.what() << endl;
+		cout << "Error: " << ex.what() << endl;
+		cout << "Code " << ex.code() << endl;
+		return 0;
 	}
+	catch (...)
+	{
+		cout << "file error" << endl;
+	}
+
+	cout << "Resolt: " << endl;
 
 	while (!fin.eof())
 	{
 		numder = "";
 		getline(fin, numder);
 		if (stoi(numder) > 9 || stoi(numder) < -9) {
-			cout << numder << endl;
+			cout << "  " << numder << endl;
 		}
 	}
 
 	fin.close();
+
+	system("PAUSE");
 	return 0;
 }

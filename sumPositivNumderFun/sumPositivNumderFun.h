@@ -5,6 +5,8 @@
 
 using namespace std;
 
-int sumPositivNumderFun(vector<int>& numders);
+
+template <typename T>
+T sumPositivNumderFun(vector<T>& numders);
 
 #endif

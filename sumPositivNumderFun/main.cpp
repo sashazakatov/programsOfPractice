@@ -1,3 +1,8 @@
+﻿/*
+	Даний одновимірний цілісний масив. 
+	Знайтисуму елементів масиву, розташованих до останнього позитивного елемента
+*/
+
 #include <iostream>
 #include <vector>
 
@@ -9,7 +14,9 @@ using namespace std;
 int main()
 {
 	vector<int> numders = { 1,2,3,4,5 };
-	int resolt = sumPositivNumderFun(numders);
-	cout << "The sum positiv numder: " << resolt << endl;
+
+	cout << "The sum positiv numder: " << sumPositivNumderFun(numders) << endl;
+
+	system("PAUSE");
 	return 0;
 }
