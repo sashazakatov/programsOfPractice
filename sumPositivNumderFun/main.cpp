@@ -13,7 +13,8 @@ using namespace std;
 
 int main()
 {
-	vector<int> numders = { 1,2,3,4,5 };
+	vector<int> numders = { -1,-2,-3,-4, 5 };
+
 
 	cout << "The sum positiv numder: " << sumPositivNumderFun(numders) << endl;
 

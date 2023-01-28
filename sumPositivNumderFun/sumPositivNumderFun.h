@@ -5,8 +5,7 @@
 
 using namespace std;
 
-
-template <typename T>
-T sumPositivNumderFun(vector<T>& numders);
+int findIndexLastPositivNumder(vector<int>& numders);
+int sumPositivNumderFun(vector<int>& numders);
 
 #endif
