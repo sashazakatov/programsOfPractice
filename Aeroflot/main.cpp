@@ -41,6 +41,8 @@ int main() {
 		cout << "file error" << endl;
 	}
 
+	cout << "Resolt: " << endl;
+
 	while (!fin.eof())
 	{
 		Aeroflot aeroflot;

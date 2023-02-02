@@ -29,6 +29,7 @@ int main() {
 	catch (...)
 	{
 		cout << "file error" << endl;
+		return 0;
 	}
 
 	cout << "Resolt: " << endl;

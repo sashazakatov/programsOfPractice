@@ -15,8 +15,9 @@ int main()
 {
 	vector<int> numders = { -1,-2,-3,-4, 5 };
 
+	int result = sumPositivNumderFun(numders);
 
-	cout << "The sum positiv numder: " << sumPositivNumderFun(numders) << endl;
+	cout << "The sum positiv numder: " << result << endl;
 
 	system("PAUSE");
 	return 0;

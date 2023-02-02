@@ -1,4 +1,7 @@
-﻿  sumPositivNumderFun.cpp
-D:\Goit_videnar\DZ\DZ_conspect\programsOfPractice\sumPositivNumderFun\sumPositivNumderFun.cpp(7,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\Goit_videnar\DZ\DZ_conspect\programsOfPractice\sumPositivNumderFun\sumPositivNumderFun.cpp(20,75): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  sumPositivNumderFun.vcxproj -> D:\Goit_videnar\DZ\DZ_conspect\programsOfPractice\x64\Debug\sumPositivNumderFun.exe
+﻿  main.cpp
+  sumPositivNumderFun.cpp
+E:\Уник\Второй_курс\Практика2022\programsOfPractice\sumPositivNumderFun\sumPositivNumderFun.cpp(7,2): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\Уник\Второй_курс\Практика2022\programsOfPractice\sumPositivNumderFun\sumPositivNumderFun.cpp(20,75): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  LINK : не найден или не выполнена сборка E:\Уник\Второй_курс\Практика2022\programsOfPractice\x64\Debug\sumPositivNumderFun.exe при последней инкрементной компоновке; выполняется полная компоновка
+  sumPositivNumderFun.vcxproj -> E:\Уник\Второй_курс\Практика2022\programsOfPractice\x64\Debug\sumPositivNumderFun.exe

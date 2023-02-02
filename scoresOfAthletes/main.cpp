@@ -11,7 +11,6 @@ using namespace std;
 
 int main()
 {
-    const int SIZE = 5;
     int SumOfBul = 0;
     int athleteIndex;
 
