@@ -15,13 +15,13 @@ int findIndexLastPositivNumder(vector<int>& numders)
 }
 int sumPositivNumderFun(vector<int>& numders) {
 	int sum = 0;
-	int indexLastPositivNumder = findIndexLastPositivNumder(numders);
+	int lastIndexPositivNumder = findIndexLastPositivNumder(numders);
 
-	if (indexLastPositivNumder == -1) indexLastPositivNumder = numders.size();
+	if (lastIndexPositivNumder == -1) lastIndexPositivNumder = numders.size();
 
 	for (int i = 0; i < numders.size(); i++) 
 	{
-		if (i == indexLastPositivNumder) break;
+		if (i == lastIndexPositivNumder) break;
 		sum += numders[i];
 	}
 
